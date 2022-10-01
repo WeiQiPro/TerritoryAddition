@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(70, 110, 97);
+    font-size: 104px;
+}
+
+.black {
+    background-color: rgb(134, 131, 131);
+    outline-style: solid; 
+    outline-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 420px;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 92px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.white {
+    background-color: rgb(134, 131, 131);
+    outline-style: solid; 
+    outline-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 420px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 92px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(231, 228, 228);
+    -webkit-text-fill-color: rgb(231, 228, 228);
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.refresh {
+    inline-size: 0%;
+    background-color: rgb(95, 214, 214);
+    outline-style: solid;
+    outline-color: rgb(29, 31, 31);
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fontSize {
+    position: fixed;
+    bottom: 630px;
+    font-size: 24px;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.041);
+}
+
+.bRefresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

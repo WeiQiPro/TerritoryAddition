@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Simulator</title>
+</head>
+<body>
+    <div>
+        <div class="bRefresh">
+            <button id="refresh" class="refresh">New Set</button>
+            <button id="submit" class="refresh">Check Answers</button>
+        </div>
+    </div>
+    <div class="center" class="windowSize">
+        <div id="countBlack" class="black">
+            <div id="titleBlack">Black</div>
+            <div id="numBlack"></div>
+            <div class="fontSize" id="blackAnswer">show:</div>
+        </div>
+        <div id="countWhite" class="white">
+            <div id="titleWhite">White</div>
+            <div id="numWhite"></div>
+            <div class="fontSize" id="whiteAnswer">show:</div>
+        </div>
+    </div> 
+    <script src="class.js"></script>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
