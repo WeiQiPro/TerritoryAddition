@@ -62,7 +62,7 @@ body{
 
 .fontSize {
     position: fixed;
-    bottom: 630px;
+    bottom: 530px;
     font-size: 24px;
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.041);
