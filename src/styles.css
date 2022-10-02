@@ -1,75 +1,68 @@
+html * {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 body{
-    background-color: rgb(71, 110, 97);
-    font-size: 104px;
+    display: flexbox;
+    flex-direction: column;
+    background-color: rgb(32, 194, 140);
 }
 
-.black {
-    background-color: rgb(134, 131, 131);
-    outline-style: solid; 
-    outline-color: rgb(255, 255, 255);
-    height: 400px;
-    width: 420px;
-    margin-top: 5px;
-    margin-right: 5px;
-    font-size: 92px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    text-align: center;
-}
-
-.white {
-    background-color: rgb(134, 131, 131);
-    outline-style: solid; 
-    outline-color: rgb(0, 0, 0);
-    height: 400px;
-    width: 420px;
-    margin-top: 5px;
-    margin-left: 5px;
-    font-size: 92px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(231, 228, 228);
-    -webkit-text-fill-color: rgb(231, 228, 228);
-    text-align: center;
-}
-
-.row {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center; 
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.refresh {
-    inline-size: 0%;
-    background-color: rgb(95, 214, 214);
-    outline-style: solid;
-    outline-color: rgb(29, 31, 31);
-    width: 150px;
-    height: 25px;
-    margin: 5px;
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 14px;
 }
 
-.fontSize {
-    position: fixed;
-    bottom: 430px;
-    font-size: 24px;
-    -webkit-text-stroke-width: 0;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.041);
+.subContainer, 
+.black,
+.white{
+    margin: 2px;
+    width: 300px;
+    height: auto;
+    font-size: 34px;
+    border-radius: 30px;
+    border-style: inset;
+    border: 2px;
+    border-color: rgb(55, 112, 94);
 }
 
-.bRefresh {
+.black{
+    color:azure;
+    background-color: rgb(27, 27, 27);
+    border-color: rgb(55, 112, 94);
+}
+
+.white{
+    color:black;
+    background-color: rgb(243, 242, 242);
+    border-color: rgb(55, 112, 94);
+}
+
+.fontSize{
+    font-size: 20px;
+}
+
+.countingbuttonContainer, .countingButtons{
+    margin: 2px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: 'Nova Round';
+    font-size: 18px;
+}
+
+.countingButtons{
+    width: auto;
+    height: 100%;
+    background-color: rgb(50, 235, 235);
+    border-color: black;
+    border-radius: 30px;
+    border: 2px;
+    border-style: solid;
 }

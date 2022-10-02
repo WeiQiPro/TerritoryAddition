@@ -3,6 +3,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles.css">
     <meta charset="UTF-8">
@@ -12,18 +15,18 @@
 </head>
 <body>
     <div>
-        <div class="bRefresh">
-            <button id="refresh" class="refresh">New Set</button>
-            <button id="submit" class="refresh">Check Answers</button>
+        <div class="countingbuttonContainer">
+            <button id="newItemSet" class="countingButtons">new set</button>
+            <button id="checkAnswers" class="countingButtons">check answers</button>
         </div>
     </div>
-    <div class="center" class="windowSize">
-        <div id="countBlack" class="black">
+    <div class="container">
+        <div id="countBlack" class="black" class="subContainer" >
             <div id="titleBlack">Black</div>
             <div id="numBlack"></div>
             <div class="fontSize" id="blackAnswer">show:</div>
         </div>
-        <div id="countWhite" class="white">
+        <div id="countWhite" class="white" class="subContainer" >
             <div id="titleWhite">White</div>
             <div id="numWhite"></div>
             <div class="fontSize" id="whiteAnswer">show:</div>

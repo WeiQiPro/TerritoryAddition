@@ -9,8 +9,8 @@ const blackAnswer = document.getElementById('blackAnswer')
 const whiteAnswer = document.getElementById('whiteAnswer')
 const totalBlack = document.getElementById('totalBlack')
 const totalWhite = document.getElementById('totalWhite')
-const submit = document.getElementById('submit')
-const refresh = document.getElementById('refresh')
+const checkAnswers = document.getElementById('checkAnswers')
+const newItemSet = document.getElementById('newItemSet')
 let numBlack = document.getElementById('numBlack')
 let numWhite = document.getElementById('numWhite')
 
@@ -45,5 +45,5 @@ function setValues(color) {
 }
 
 
-submit.addEventListener("click", showHTML)
-refresh.addEventListener("click", update)
+checkAnswers.addEventListener("click", showHTML)
+newItemSet.addEventListener("click", update)
