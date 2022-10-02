@@ -12,6 +12,7 @@ class TerritorySet {
         let tally = 0
         do {
             this.territories = []
+            console.log(this.territoryCount)
             for(var i = 0; i < this.territoryCount; i++) {
                 this.territories[i] = i;
             }

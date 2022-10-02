@@ -27,20 +27,13 @@ function initialize() {
     updateHTMLElement('numBlack', black)
     updateHTMLElement('numWhite', white)
 }
+
 initialize()
 
 function update() {
     hiddenHTML(blackAnswer)
     hiddenHTML(whiteAnswer)
-    setValues(black)
-    setValues(white)
     initialize()
-}
-
-function setValues(color) {
-    color.territories = []
-    color.territoryCount = Math.floor(Math.random()* (7-2) + 2)
-    color.maxScore = Math.floor(Math.random()*(100-20) + 20)
 }
 
 
