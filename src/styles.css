@@ -91,3 +91,13 @@ button:active{
     background-color: rgb(142, 240, 240);
     border-bottom: 1px solid rgba(41, 41, 41, 0.425);
 } 
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 254, 254, 0.274);
+    color: rgb(70, 70, 70);
+    text-align: center;
+  }
