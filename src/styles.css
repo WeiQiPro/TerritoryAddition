@@ -22,10 +22,13 @@ body{
 }
 
 .text{
-    font-size: 34px;
+    font-size: 48px;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: rgb(32, 194, 140, 0.5);
     width: auto;
-    height: 70px;
-    background: linear-gradient(to bottom, rgba(146, 146, 146, 0), rgba(114, 113, 113, 0.1));
+    height: auto;
+    background: linear-gradient(to bottom, rgba(146, 146, 146, 0), rgba(114, 113, 113, 0.05));
     background-color: rgba(143, 141, 141, 0);
     box-shadow: 0px 10px rgba(44, 44, 44, 0.185);
 }
@@ -93,6 +96,9 @@ button:active{
 } 
 
 .footer {
+    display: flexbox;
+    flex-direction: column;
+    flex: auto;
     position: absolute;
     left: 0;
     bottom: 0;
