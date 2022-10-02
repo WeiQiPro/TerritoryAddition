@@ -11,6 +11,7 @@ class TerritorySet {
     setTerritories() {
         let tally = 0
         do {
+            this.territories = []
             for(var i = 0; i < this.territoryCount; i++) {
                 this.territories[i] = i;
             }
@@ -24,6 +25,7 @@ class TerritorySet {
                 0)
             }
             while (tally > this.maxScore);
+        console.log(this.territories)
     }
 
     setScore() {
