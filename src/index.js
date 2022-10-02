@@ -16,8 +16,8 @@ let numWhite = document.getElementById('numWhite')
 
 
 let black = new TerritorySet ({})
-    
-let white = new TerritorySet ({})
+
+let white = new TerritorySet ({komi: 7.5})
 
 function initialize() {
     black.setTerritories()
@@ -27,21 +27,13 @@ function initialize() {
     updateHTMLElement('numBlack', black)
     updateHTMLElement('numWhite', white)
 }
+
 initialize()
 
 function update() {
     hiddenHTML(blackAnswer)
     hiddenHTML(whiteAnswer)
-    setValues(black)
-    setValues(white) 
     initialize()
-    return 'I am a god'
-}
-
-function setValues(color) {
-    color.territories = []
-    color.territoryCount = Math.floor(Math.random()* (7-2) + 2)
-    color.maxScore = Math.floor(Math.random()*(100-20) + 20)
 }
 
 
