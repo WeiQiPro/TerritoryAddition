@@ -12,6 +12,24 @@ body{
     background-color: rgb(32, 194, 140);
 }
 
+.header,
+.text{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.text{
+    font-size: 34px;
+    width: auto;
+    height: 70px;
+    background: linear-gradient(to bottom, rgba(146, 146, 146, 0), rgba(114, 113, 113, 0.1));
+    background-color: rgba(143, 141, 141, 0);
+    box-shadow: 0px 10px rgba(44, 44, 44, 0.185);
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -60,9 +78,16 @@ body{
 .countingButtons{
     width: auto;
     height: 100%;
-    background-color: rgb(50, 235, 235);
+    background-color: rgba(50, 235, 235, 0.644);
+    box-shadow: 0px 4px rgba(44, 44, 44, 0.185);
     border-color: black;
     border-radius: 30px;
-    border: 2px;
+    border: 1px double rgba(13, 14, 13, 0.123);
     border-style: solid;
 }
+
+button:active{
+    box-shadow: 0px 0px rgba(44, 44, 44, 0);
+    background-color: rgb(142, 240, 240);
+    border-bottom: 1px solid rgba(41, 41, 41, 0.425);
+} 
