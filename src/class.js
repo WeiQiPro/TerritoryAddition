@@ -1,11 +1,12 @@
 class TerritorySet {
     constructor({
-        score
+        komi
     }) {
-        this.score = score
+        this.score = 0
         this.territories = []
         this.territoryCount = Math.floor(4 + (Math.random() * 2))
         this.maxScore = 90
+        this.komi = komi
     }
 
     setTerritories() {
@@ -26,7 +27,6 @@ class TerritorySet {
                 0)
             }
             while (tally > this.maxScore);
-        console.log(this.territories)
     }
 
     setScore() {
@@ -34,5 +34,9 @@ class TerritorySet {
         for (let i = 0; i < this.territories.length; i++) {
             this.score += this.territories[i];
         }
+        if (this.komi) {
+            this.score += 7.5
+        }
+
     }
 }

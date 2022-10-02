@@ -17,7 +17,7 @@ let numWhite = document.getElementById('numWhite')
 
 let black = new TerritorySet ({})
 
-let white = new TerritorySet ({})
+let white = new TerritorySet ({komi: true})
 
 function initialize() {
     black.setTerritories()
