@@ -4,6 +4,7 @@ class TerritorySet {
     }) {
         this.score = 0
         this.territories = []
+        // We want the territory count to be between 4 -5
         this.territoryCount = Math.floor(4 + (Math.random() * 2))
         this.maxScore = 90
         this.komi = komi
@@ -12,8 +13,7 @@ class TerritorySet {
     setTerritories() {
         let tally = 0
         do {
-            this.territories = []
-            console.log(this.territoryCount)
+            this.territories = [] // reset array after every loop
             for(var i = 0; i < this.territoryCount; i++) {
                 this.territories[i] = i;
             }
@@ -35,8 +35,7 @@ class TerritorySet {
             this.score += this.territories[i];
         }
         if (this.komi) {
-            this.score += 7.5
+            this.score += this.komi
         }
-
     }
 }
