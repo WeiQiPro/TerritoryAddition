@@ -4,25 +4,25 @@ class TerritorySet {
     }) {
         this.score = score
         this.territories = []
-        this.territoryCount = Math.floor(Math.random()* (7-2) + 2)
-        this.maxScore = Math.floor(Math.random()*(100-20) + 20)
+        this.territoryCount = Math.floor(4 + (Math.random() * 2))
+        this.maxScore = 90
     }
-    
+
     setTerritories() {
         let tally = 0
         do {
             for(var i = 0; i < this.territoryCount; i++) {
                 this.territories[i] = i;
             }
-            
+
             this.territories = this.territories.map((x) => {
-                return Math.floor(Math.random() * (this.maxScore - 2) + 2)
+                return Math.floor(2 + Math.random() * 62)
             })
-            
+
             tally = this.territories.reduce(
-                (accumulator, territory) => accumulator + territory, 
+                (accumulator, territory) => accumulator + territory,
                 0)
-            } 
+            }
             while (tally > this.maxScore);
     }
 

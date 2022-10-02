@@ -16,7 +16,7 @@ let numWhite = document.getElementById('numWhite')
 
 
 let black = new TerritorySet ({})
-    
+
 let white = new TerritorySet ({})
 
 function initialize() {
@@ -33,9 +33,8 @@ function update() {
     hiddenHTML(blackAnswer)
     hiddenHTML(whiteAnswer)
     setValues(black)
-    setValues(white) 
+    setValues(white)
     initialize()
-    return 'I am a god'
 }
 
 function setValues(color) {
