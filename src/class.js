@@ -1,10 +1,14 @@
+class HTML {
+    
+}
+
 class TerritorySet {
     constructor({
         score
     }) {
         this.score = score
         this.territories = []
-        this.territoryCount = Math.floor(Math.random()* (7-2) + 2)
+        this.territoryCount = Math.floor(4 + Math.random()* 2)
         this.maxScore = Math.floor(Math.random()*(100-20) + 20)
     }
     
@@ -31,5 +35,35 @@ class TerritorySet {
         for (let i = 0; i < this.territories.length; i++) {
             this.score += this.territories[i];
         }
+    }
+}
+
+class VisualTerritories {
+    constructor({
+        visualCtxPosition,
+        territoryFallVector,
+        territorySquareWidth,        
+        territoryColorGradiant,
+        territoryColorBorder,
+        colorScoreCopy
+    }){
+    this.visualTerritoryPosition = visualCtxPosition
+    this.territoryFallVector = territoryFallVector
+    this.territorySquareWidth = territorySquareWidth
+    this.territoryColorGradiant = territoryColorGradiant
+    this.territoryColorBorder = territoryColorBorder
+    this.colorScoreCopy = colorScoreCopy
+    }
+
+    visualRepresentation(){
+        visualCtx.fillstyle = this.territoryColorGradiant
+        visualCtx.strokeFill = this.territoryColorBorder
+        visualCtx.stroke(0, 0, this.territorySquareWidth+1, territorySquareWidth+1)
+        visualCtx.fillRect(this.visualCtxPosition.x, this.visualCtxPosition.y, this.territorySquareWidth, this.territorySquareWidth)
+    }
+
+    visualAnimation(){
+        this.visualCtxPosition.y += this.territoryFallVector.y
+        
     }
 }

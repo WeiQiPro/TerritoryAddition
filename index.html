@@ -22,7 +22,13 @@
         <div class="countingbuttonContainer">
             <button id="newItemSet" class="countingButtons">new set</button>
             <button id="checkAnswers" class="countingButtons">check answers</button>
+            <button id="setButton" class="countingButtons">⚙️</button>
         </div>
+    </div>
+    <div class="settings" id="setDiv">
+        <div><label for="maxScore" >max score: </label><input type="number" name="maxScore" id="maxScore" class="input" value="90"></div>
+        <div><label for="maxTerritories" >Number of territories: </label><input type="number" name="maxTerritories" id="maxTerritories" class="input" value="4"></div>
+        <input type="submit" id="submitInput">
     </div>
     <div class="container">
         <div id="countBlack" class="black" class="subContainer" >
@@ -36,14 +42,15 @@
             <div class="fontSize" id="whiteAnswer">show:</div>
         </div>
     </div> 
+    <canvas id="visualTerritory"></canvas>
+    </div>
     <div class="footer">
         <div>
-            Built by Jeremiah Donley
+            Built by TangJie
         </div>
         <div>
-            Credit to Trevoke
+            Credit to Trevoke and Dy
         </div>
-    </div>
     <script src="./src/class.js"></script>
     <script src="./src/utils.js"></script>
     <script src="./src/index.js"></script>

@@ -6,6 +6,21 @@ html * {
     text-align: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#visualTerritory{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 body{
     display: flexbox;
     flex-direction: column;
@@ -96,14 +111,23 @@ button:active{
 } 
 
 .footer {
-    display: flexbox;
+    margin: top 5px;
+    display: block;
     flex-direction: column;
-    flex: auto;
-    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 254, 254, 0.274);
     color: rgb(70, 70, 70);
     text-align: center;
+  }
+
+  input[type=number]{
+    width: 20px;
+    height: 20px;
+  }
+
+  .settings{
+    display: none;
+    flex-direction: column;
   }
